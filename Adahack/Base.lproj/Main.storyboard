@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zas-My-wKb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Adahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EquitySecurities" translatesAutoresizingMaskIntoConstraints="NO" id="4GS-Ds-Wc3">
+                                <rect key="frame" x="227" y="434" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BondMarket" translatesAutoresizingMaskIntoConstraints="NO" id="13x-dO-Elx">
+                                <rect key="frame" x="49" y="434" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StockAndBondMarket" translatesAutoresizingMaskIntoConstraints="NO" id="2i7-ZG-IGr">
+                                <rect key="frame" x="49" y="611" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DerivativesMarket" translatesAutoresizingMaskIntoConstraints="NO" id="qSr-Co-duF">
+                                <rect key="frame" x="227" y="611" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXy-wV-gI6">
+                                <rect key="frame" x="49" y="91" width="317" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You, the gamer, have some savings which you intend to invest in some portfolio. This game is designed for its educational purpose, to suggest better financial decisions and inform the risks. Happy gaming!
+ You have some following options to look into:</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YoW-F8-aPh"/>
+                    <connections>
+                        <outlet property="viewBondMarket" destination="13x-dO-Elx" id="8Yf-oo-RHd"/>
+                        <outlet property="viewDerivatives" destination="qSr-Co-duF" id="bCP-Fx-EtP"/>
+                        <outlet property="viewEquity" destination="4GS-Ds-Wc3" id="vJs-9r-LS8"/>
+                        <outlet property="viewStockAndBond" destination="2i7-ZG-IGr" id="kP1-Fq-giC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="81.696428571428569"/>
+        </scene>
+        <!--Bond Market View Controller-->
+        <scene sceneID="RZI-yQ-3cf">
+            <objects>
+                <viewController storyboardIdentifier="BondMarketVC" id="MUc-Ap-Y8v" customClass="BondMarketViewController" customModule="Adahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LJz-Ww-EZj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BondDetailImage" translatesAutoresizingMaskIntoConstraints="NO" id="30R-cj-kP0">
+                                <rect key="frame" x="118" y="73" width="178" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpR-7L-MLH">
+                                <rect key="frame" x="49" y="332" width="326" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A bond is essentially a written pro-mise that the amount loaned to the issuer will be repaid. 
+
+The bond market includes Treasury notes and bonds, corporate bonds, municipal bonds, mortgage securities, and federal agency debt.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BondDetail1" translatesAutoresizingMaskIntoConstraints="NO" id="oZX-eB-cGa">
+                                <rect key="frame" x="49" y="605" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BondDetail2" translatesAutoresizingMaskIntoConstraints="NO" id="IGq-dC-Af0">
+                                <rect key="frame" x="49" y="685" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BondDetail3" translatesAutoresizingMaskIntoConstraints="NO" id="vn6-7w-hIa">
+                                <rect key="frame" x="49" y="765" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qtL-nT-bhX"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OSc-se-9us"/>
+                    <connections>
+                        <outlet property="viewDifferentBonds" destination="oZX-eB-cGa" id="led-Us-SUf"/>
+                        <outlet property="viewReportsAndComments" destination="vn6-7w-hIa" id="LH5-dr-pz9"/>
+                        <outlet property="viewRiskBonds" destination="IGq-dC-Af0" id="sS2-TX-XEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4j-zY-NKb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="81.696428571428569"/>
+        </scene>
+        <!--Equity View Controller-->
+        <scene sceneID="1wk-mA-X88">
+            <objects>
+                <viewController storyboardIdentifier="EquityVC" id="MdI-2n-RV6" customClass="EquityViewController" customModule="Adahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vli-Yp-vuB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EquityDetailImage" translatesAutoresizingMaskIntoConstraints="NO" id="83L-F4-GOv">
+                                <rect key="frame" x="76" y="95" width="263" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NASDAqis a global electronic marketplace for buying and trading securities. It was the world's first electronic exchange." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flE-Yg-xbZ">
+                                <rect key="frame" x="47" y="366" width="321" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EquityDetail1" translatesAutoresizingMaskIntoConstraints="NO" id="33z-Nw-rRt">
+                                <rect key="frame" x="47" y="517" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EquityDetail2" translatesAutoresizingMaskIntoConstraints="NO" id="R76-RJ-AMF">
+                                <rect key="frame" x="47" y="597" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F9t-C3-LX8"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDS-SS-ugZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="750.66964285714278"/>
+        </scene>
+        <!--Stock And Bond View Controller-->
+        <scene sceneID="xbS-V1-w5L">
+            <objects>
+                <viewController storyboardIdentifier="SnMVC" id="RG8-8D-2jW" customClass="StockAndBondViewController" customModule="Adahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3cp-cd-664">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SnMImage" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-7V-Yxl">
+                                <rect key="frame" x="118" y="60" width="178" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-ch-sHv">
+                                <rect key="frame" x="44" y="229" width="310" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A market index tracks the performance of a certain group of stocks and bonds. These investments are grouped around a particular industry, like tech stocks for example or the stock market overall, as in the case of S&amp;P 500 which tracks all the 500 top companies in the US.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SnMDetail3" translatesAutoresizingMaskIntoConstraints="NO" id="ee6-Kf-KDN">
+                                <rect key="frame" x="32" y="666" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SnMDetail1" translatesAutoresizingMaskIntoConstraints="NO" id="x76-0V-Wy9">
+                                <rect key="frame" x="32" y="506" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SnMDetail2" translatesAutoresizingMaskIntoConstraints="NO" id="1Tc-jc-yoi">
+                                <rect key="frame" x="32" y="586" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SnMDetail4" translatesAutoresizingMaskIntoConstraints="NO" id="6Qv-kD-nYk">
+                                <rect key="frame" x="32" y="746" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W33-7D-Ei7"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fw9-5V-kjm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="1415.625"/>
+        </scene>
+        <!--Derivatives View Controller-->
+        <scene sceneID="M8N-va-SRg">
+            <objects>
+                <viewController storyboardIdentifier="DerivativesVC" id="bZU-7P-mPz" customClass="DerivativesViewController" customModule="Adahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGp-zm-xqX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DerivativeImage" translatesAutoresizingMaskIntoConstraints="NO" id="UdK-6O-N94">
+                                <rect key="frame" x="118" y="54" width="178" height="241"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cza-6R-DLI">
+                                <rect key="frame" x="54" y="277" width="326" height="411"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Futures, options, and related derivatives contracts provide payoffs that depend on the values of other variables such as commodity prices, bond and stock prices, interest rates, or market index values. For this reason, these instruments sometimes are called derivative assets: Their values derive from the values of other assets. These assets are also called contingent claims because their payoffs are contingent on the value of other values.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DerivativeDetail1" translatesAutoresizingMaskIntoConstraints="NO" id="wCc-4f-4Zb">
+                                <rect key="frame" x="54" y="696" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DerivativeDetail2" translatesAutoresizingMaskIntoConstraints="NO" id="dGX-Tv-gsf">
+                                <rect key="frame" x="54" y="776" width="301" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cht-54-jcc"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffq-zf-qrA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="2078.5714285714284"/>
+        </scene>
+        <!--Detail Bond Market View Controller-->
+        <scene sceneID="x6D-Wy-AJn">
+            <objects>
+                <viewController storyboardIdentifier="DetailBondMarketVC" id="dvj-LO-inq" customClass="DetailBondMarketViewController" customModule="Adahack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q6E-ZD-90g" customClass="Bond">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nku-LF-6lP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JI6-wy-Div">
+                                        <rect key="frame" x="-1" y="0.0" width="418" height="1510"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BondDetailImage2" translatesAutoresizingMaskIntoConstraints="NO" id="z3J-gB-xxx">
+                                                <rect key="frame" x="0.0" y="0.0" width="418" height="391"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="391" id="ZKm-Pa-hVP"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Bonds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRq-xX-IC1">
+                                                <rect key="frame" x="25" y="416" width="326" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="326" id="G77-E0-xBD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The US government borrows large funds by issuing what's called Treasury notes (T-notes) and Treasury bonds." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBN-o9-iBy">
+                                                <rect key="frame" x="25" y="463" width="330" height="122"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="122" id="mxb-IX-W3q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0w5-hN-7XM">
+                                                <rect key="frame" x="25" y="688" width="330" height="169"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="169" id="KdN-oG-2vU"/>
+                                                </constraints>
+                                                <string key="text">Around the world, many governments issued bonds that are linked to an index of the cost of living in order to provide their citi- zens with an effective way to hedge inflation risk.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BondDetailDetail1" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-ph-hKt">
+                                                <rect key="frame" x="25" y="580" width="355" height="109"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="109" id="hGs-3o-1wb"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BondDetailDetail2" translatesAutoresizingMaskIntoConstraints="NO" id="Hqf-jT-fAr">
+                                                <rect key="frame" x="25" y="854" width="353" height="109"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="109" id="iag-Wi-z2G"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Some US government agencies issue their own securities to finance their activities." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Goh-Uh-fpP">
+                                                <rect key="frame" x="25" y="961" width="326" height="79"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.0" green="0.41568627450000001" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BondDetailDetail3" translatesAutoresizingMaskIntoConstraints="NO" id="wsH-0B-S4e">
+                                                <rect key="frame" x="25" y="1060" width="355" height="109"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="109" id="PmX-Xq-LNd"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="wsH-0B-S4e" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" constant="25" id="0BI-0b-gOB"/>
+                                            <constraint firstAttribute="trailing" secondItem="z3J-gB-xxx" secondAttribute="trailing" id="1X4-uM-gzb"/>
+                                            <constraint firstItem="MBN-o9-iBy" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" constant="25" id="2mB-KY-6ZI"/>
+                                            <constraint firstAttribute="bottom" secondItem="wsH-0B-S4e" secondAttribute="bottom" constant="341" id="737-Mh-ViE"/>
+                                            <constraint firstItem="MBN-o9-iBy" firstAttribute="top" secondItem="vRq-xX-IC1" secondAttribute="bottom" constant="6" id="Djq-fa-5zB"/>
+                                            <constraint firstItem="vRq-xX-IC1" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" constant="25" id="F3r-wH-m6e"/>
+                                            <constraint firstItem="0w5-hN-7XM" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" constant="25" id="Gbt-uF-50d"/>
+                                            <constraint firstItem="aeH-ph-hKt" firstAttribute="top" secondItem="vRq-xX-IC1" secondAttribute="bottom" constant="123" id="HiH-Mq-cJd"/>
+                                            <constraint firstItem="z3J-gB-xxx" firstAttribute="top" secondItem="JI6-wy-Div" secondAttribute="top" id="Ip3-Kv-B4S"/>
+                                            <constraint firstItem="wsH-0B-S4e" firstAttribute="top" secondItem="Goh-Uh-fpP" secondAttribute="bottom" constant="20" id="LIW-lj-I8W"/>
+                                            <constraint firstItem="z3J-gB-xxx" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" id="T34-PN-esi"/>
+                                            <constraint firstAttribute="trailing" secondItem="0w5-hN-7XM" secondAttribute="trailing" constant="63" id="bai-KW-PdK"/>
+                                            <constraint firstItem="aeH-ph-hKt" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" constant="25" id="c2V-r4-Qw5"/>
+                                            <constraint firstItem="0w5-hN-7XM" firstAttribute="top" secondItem="MBN-o9-iBy" secondAttribute="bottom" constant="103" id="cet-2L-ubx"/>
+                                            <constraint firstItem="vRq-xX-IC1" firstAttribute="top" secondItem="z3J-gB-xxx" secondAttribute="bottom" constant="25" id="dHd-YT-CiE"/>
+                                            <constraint firstItem="wsH-0B-S4e" firstAttribute="leading" secondItem="Goh-Uh-fpP" secondAttribute="leading" id="fNI-Q3-y2j"/>
+                                            <constraint firstAttribute="trailing" secondItem="wsH-0B-S4e" secondAttribute="trailing" constant="38" id="gnL-Vb-yc6"/>
+                                            <constraint firstAttribute="trailing" secondItem="MBN-o9-iBy" secondAttribute="trailing" constant="63" id="l43-a5-rPg"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hqf-jT-fAr" secondAttribute="trailing" constant="40" id="lL6-xp-L2e"/>
+                                            <constraint firstItem="Hqf-jT-fAr" firstAttribute="top" secondItem="aeH-ph-hKt" secondAttribute="bottom" constant="165" id="pX6-Fb-NCN"/>
+                                            <constraint firstItem="Hqf-jT-fAr" firstAttribute="leading" secondItem="JI6-wy-Div" secondAttribute="leading" constant="25" id="wa2-Vs-Hh9"/>
+                                            <constraint firstAttribute="trailing" secondItem="aeH-ph-hKt" secondAttribute="trailing" constant="38" id="x8y-Uz-cxQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JI6-wy-Div" firstAttribute="leading" secondItem="Nku-LF-6lP" secondAttribute="leading" id="C0a-0h-hjF"/>
+                                    <constraint firstItem="JI6-wy-Div" firstAttribute="bottom" secondItem="Nku-LF-6lP" secondAttribute="bottom" id="T9e-7x-L24"/>
+                                    <constraint firstItem="JI6-wy-Div" firstAttribute="trailing" secondItem="Nku-LF-6lP" secondAttribute="trailing" id="ZLF-B8-yN1"/>
+                                    <constraint firstItem="JI6-wy-Div" firstAttribute="top" secondItem="Nku-LF-6lP" secondAttribute="top" id="hbC-G3-wEJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hs1-G5-MXr"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.94117647059999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Nku-LF-6lP" secondAttribute="bottom" id="8IT-xJ-q00"/>
+                            <constraint firstItem="Nku-LF-6lP" firstAttribute="top" secondItem="Q6E-ZD-90g" secondAttribute="top" id="Be1-Au-66F"/>
+                            <constraint firstItem="Nku-LF-6lP" firstAttribute="trailing" secondItem="Hs1-G5-MXr" secondAttribute="trailing" id="EYW-5Z-N68"/>
+                            <constraint firstItem="JI6-wy-Div" firstAttribute="centerY" secondItem="Hs1-G5-MXr" secondAttribute="centerY" id="Qqs-X5-Y3q"/>
+                            <constraint firstItem="Nku-LF-6lP" firstAttribute="leading" secondItem="Hs1-G5-MXr" secondAttribute="leading" id="SeW-Is-eNf"/>
+                            <constraint firstItem="JI6-wy-Div" firstAttribute="width" secondItem="Q6E-ZD-90g" secondAttribute="width" multiplier="1.00966" id="vfK-71-Os6"/>
+                            <constraint firstItem="JI6-wy-Div" firstAttribute="centerX" secondItem="Hs1-G5-MXr" secondAttribute="centerX" id="w3I-kj-SlE"/>
+                            <constraint firstItem="JI6-wy-Div" firstAttribute="height" secondItem="Q6E-ZD-90g" secondAttribute="height" multiplier="1.00667" priority="250" id="xCu-YV-qtF"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="contentView" destination="JI6-wy-Div" id="x1q-Fc-lfO"/>
+                        <outlet property="scrollView" destination="Nku-LF-6lP" id="v7o-xR-BGU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zB-jr-wUw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2324.6376811594205" y="283.25892857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8ea-fn-3Sa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zas-My-wKb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gKq-mA-vgQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CAj-wA-n5b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mqa-d8-JkB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BondDetail1" width="256" height="56.5"/>
+        <image name="BondDetail2" width="256" height="56.5"/>
+        <image name="BondDetail3" width="256" height="56.5"/>
+        <image name="BondDetailDetail1" width="256" height="51"/>
+        <image name="BondDetailDetail2" width="256" height="51"/>
+        <image name="BondDetailDetail3" width="256" height="51"/>
+        <image name="BondDetailImage" width="256" height="386.5"/>
+        <image name="BondDetailImage2" width="256" height="270"/>
+        <image name="BondMarket" width="72.5" height="72.5"/>
+        <image name="DerivativeDetail1" width="256" height="56.5"/>
+        <image name="DerivativeDetail2" width="256" height="56.5"/>
+        <image name="DerivativeImage" width="256" height="222"/>
+        <image name="DerivativesMarket" width="256" height="256"/>
+        <image name="EquityDetail1" width="256" height="56.5"/>
+        <image name="EquityDetail2" width="256" height="56.5"/>
+        <image name="EquityDetailImage" width="256" height="230"/>
+        <image name="EquitySecurities" width="256" height="256"/>
+        <image name="SnMDetail1" width="256" height="56.5"/>
+        <image name="SnMDetail2" width="256" height="56.5"/>
+        <image name="SnMDetail3" width="256" height="56.5"/>
+        <image name="SnMDetail4" width="256" height="56.5"/>
+        <image name="SnMImage" width="256" height="204"/>
+        <image name="StockAndBondMarket" width="256" height="256"/>
+    </resources>
+</document>

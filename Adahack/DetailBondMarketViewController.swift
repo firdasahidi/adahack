@@ -8,10 +8,15 @@
 import UIKit
 
 class DetailBondMarketViewController: UIViewController {
-
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var contentView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scrollView.heightAnchor.constraint(equalToConstant: 1000).isActive = true
+        scrollView.isScrollEnabled = true
+        contentView.heightAnchor.constraint(equalToConstant: 1000).isActive = true
         // Do any additional setup after loading the view.
     }
     
